@@ -4,7 +4,3 @@
 
  - autohotspot-install: Install scrips and configs to enable automatic hotspot
 	when eth0 is disconnected on startup.
-
-bin/: directory for bins
-config/: final configurations to be copied to system
-script/: installation scripts
