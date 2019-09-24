@@ -7,3 +7,10 @@ apt-get upgrade -y
 
 #Install necessary gps and chrony daemons
 apt-get install gpsd gpsd-clients python-gps chrony -y
+
+#Copy config files
+cp ../config/gpsd /etc/default/gpsd
+cp ../config/chrony.conf /etc/chrony/chrony.conf
+
+#reboot
+#reboot

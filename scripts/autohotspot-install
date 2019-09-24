@@ -10,3 +10,12 @@ systemctl unmask hostapd
 systemctl disable hostapd
 systemctl disable dnsmasq
 
+cp ../config/hostapd.conf /etc/hostapd
+cp ../config/hostapd /etc/default
+cp ../config/dnsmasq.conf /etc
+cp ../config/dhcpcd.conf /etc
+cp ../config/autohotspot.service /etc/systemd/system
+
+systemctl enable autohotspot.service
+
+cp ../bin/autohotspot /usr/bin
