@@ -1,0 +1,9 @@
+#!/bin/bash
+#Script to configure GPS dongle as a clock source
+
+#Let's make sure the system is up to date
+apt-get update -y >/dev/null 2>&1
+apt-get upgrade -y >/dev/null 2>&1
+
+#Install necessary gps and chrony daemons
+apt-get install gpsd gpsd-clients python-gps chrony -y > /dev/null 2>&1
