@@ -1,0 +1,12 @@
+#!/bin/bash
+#Install hotspot
+
+apt-get update -y
+apt-get upgrade -y
+
+apt-get install hostapd dnsmasq -y
+
+systemctl unmask hostapd
+systemctl disable hostapd
+systemctl disable dnsmasq
+
