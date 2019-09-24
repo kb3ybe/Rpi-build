@@ -1,21 +1,27 @@
 #!/bin/bash
-#Install hotspot
+#Install automatic hotspot script for field work
 
+#Let's make sure things are up to date
 apt-get update -y
 apt-get upgrade -y
 
+#Install required packages
 apt-get install hostapd dnsmasq -y
 
+#Keep processes from starting automatically
 systemctl unmask hostapd
 systemctl disable hostapd
 systemctl disable dnsmasq
 
+#Get modified config files into place
 cp ../config/hostapd.conf /etc/hostapd
 cp ../config/hostapd /etc/default
 cp ../config/dnsmasq.conf /etc
 cp ../config/dhcpcd.conf /etc
 cp ../config/autohotspot.service /etc/systemd/system
 
+#Enable script on startup
 systemctl enable autohotspot.service
 
+#Copy script to bin path
 cp ../bin/autohotspot /usr/bin

@@ -13,4 +13,5 @@ cp ../config/gpsd /etc/default/gpsd
 cp ../config/chrony.conf /etc/chrony/chrony.conf
 
 #reboot
-#reboot
+echo 'rebooting host, installation complete'
+reboot
