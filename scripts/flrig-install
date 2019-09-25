@@ -1,0 +1,35 @@
+#!/bin/bash
+#Download, compile, and install flrig
+
+#Enable source
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sed -i -e 's/#deb-src/deb-src/g' /etc/apt/sources.list
+
+#Install/update aptitude
+apt-get install aptitude -y
+aptitude update -y
+
+#Ensure build tools are present
+aptitude install build-essential -y
+
+#Start downloading dependencies for flrig
+aptitude build-dep flrig -y
+
+#Increase swap file size
+cp /etc/dphys-swapfile /etc/dphys-swapfile.bak
+sed -i -e 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
+/etc/init.d/dphys-swapfile stop
+/etc/init.d/dphys-swapfile start
+
+cd ../build
+wget http://www.w1hkj.com/files/flrig/flrig-1.3.48.tar.gz
+tar -zxvf ./flrig-1.3.48.tar.gz
+cd flrig-1.3.48
+./configure
+make
+make install
+
+#Change swap file size back to default
+sed -i -e 's/CONF_SWAPSIZE=1024/CONF_SWAPSIZE=100/g' /etc/dphys-swapfile
+/etc/init.d/dphys-swapfile stop
+/etc/init.d/dphys-swapfile start
