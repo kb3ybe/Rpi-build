@@ -1,0 +1,7 @@
+#!/bin/bash
+#Download and install wsjt-x
+
+cd ../build
+wget http://physics.princeton.edu/pulsar/K1JT/wsjtx_2.1.0_armhf.deb
+dpkg -i ./wsjtx_2.1.0_armhf.deb
+apt-get install -f
