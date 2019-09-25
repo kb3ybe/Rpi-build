@@ -2,8 +2,8 @@
 #Install automatic hotspot script for field work
 
 #Let's make sure things are up to date
-apt-get update -y
-apt-get upgrade -y
+#apt-get update -y
+#apt-get upgrade -y
 
 #Install required packages
 apt-get install hostapd dnsmasq -y

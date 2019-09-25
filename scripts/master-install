@@ -1,0 +1,14 @@
+#!/bin/bash
+#Master installation script
+
+apt-get update -y
+apt-get upgrade -y
+
+./gpsclock-install
+./autohotspot-install
+./flrig-install
+./fldigi-install
+./wsjtx-install
+./js8call-install
+
+reboot

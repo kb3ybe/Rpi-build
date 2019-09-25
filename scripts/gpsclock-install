@@ -2,8 +2,8 @@
 #Script to configure GPS dongle as a clock source
 
 #Let's make sure the system is up to date
-apt-get update -y
-apt-get upgrade -y
+#apt-get update -y
+#apt-get upgrade -y
 
 #Install necessary gps and chrony daemons
 apt-get install gpsd gpsd-clients python-gps chrony -y
@@ -13,5 +13,5 @@ cp ../config/gpsd /etc/default/gpsd
 cp ../config/chrony.conf /etc/chrony/chrony.conf
 
 #reboot
-echo 'rebooting host, installation complete'
-reboot
+#echo 'rebooting host, installation complete'
+#reboot
