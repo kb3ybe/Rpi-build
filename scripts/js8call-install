@@ -4,4 +4,4 @@
 cd ../build
 wget http://files.js8call.com/1.1.0/js8call_1.1.0_armhf.deb
 dpkg -i ./js8call_1.1.0_armhf.deb
-apt-get install -f
+apt-get install -f -y

@@ -15,6 +15,9 @@ aptitude install build-essential -y
 #Start downloading dependencies for flrig
 aptitude build-dep fldigi -y
 
+#Install pavucontrol
+apt-get install pavucontrol -y
+
 #Increase swap file size
 cp /etc/dphys-swapfile /etc/dphys-swapfile.bak
 sed -i -e 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
