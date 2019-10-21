@@ -18,3 +18,12 @@ arecord -l
 
 nohup pat http &
 ./piardopc 8515 plughw:1,0 plughw:1,0
+
+
+# To start
+run fldigi
+sudo rigctld -m 4
+sudo kissattach /tmp/kisstnc wl2k
+sudo direwolf -p
+sudo ./piardopc 8515 plughw:1,0 plughw:1,0
+pat http
