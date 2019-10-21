@@ -1,0 +1,19 @@
+#/bin/bash
+
+# Make sure system is up to date
+apt-get update -y
+apt-get upgrade -y
+
+# Get and make Direwolf
+cd ../build
+git clone https://github.com/wb2osz/direwolf.git
+cd ./direwolf
+make
+make install
+sudo -u pi make install-conf
+
+apt-get install ax25-tools -y
+
+echo "wl2k KB3YBE 1200 255 7 Winlink" >> /etc/ax25/axports
+
+apt-get install ax25-apps -y
