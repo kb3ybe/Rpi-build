@@ -1,0 +1,20 @@
+
+cd ../build
+wget https://github.com/la5nta/pat/releases/download/v0.8.0/pat_0.8.0_linux_armhf.deb
+sudo dpkg -i pat_0.8.0_linux_armhf.deb
+pat configure
+ - callsign, password, locator
+
+
+
+rigctld -m 4
+pat http
+
+wget http://www.cantab.net/users/john.wiseman/Downloads/Beta/piardopc
+
+chmod +x piardopc
+
+arecord -l
+
+nohup pat http &
+./piardopc 8515 plughw:1,0 plughw:1,0
