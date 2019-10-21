@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt-get install texinfo shtool
+
 cd ../build
 wget https://github.com/Hamlib/Hamlib/releases/download/3.3/hamlib-3.3.tar.gz
 tar -xvf hamlib-3.3.tar.gz
