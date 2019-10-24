@@ -1,0 +1,5 @@
+hcitool scan
+
+copy mac address of mobilinkd
+
+sudo rfcomm connect /dev/rfcomm0 34:81:F4:33:AB:B3
