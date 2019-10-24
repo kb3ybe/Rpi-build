@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo rfcomm connect /dev/rfcomm0 34:81:F4:33:AB:B3 6 &
+sleep 5
+sudo kissattach /dev/rfcomm0 wl2k
