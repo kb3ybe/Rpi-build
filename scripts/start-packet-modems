@@ -1,0 +1,8 @@
+#!/bin/bash
+
+rigctld -m 4 >> /dev/null &
+sleep 2
+sudo direwolf -p -t 0 >> /dev/null &
+sleep 2
+sudo kissattach /tmp/kisstnc wl2k >> /dev/null
+

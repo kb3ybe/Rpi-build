@@ -11,5 +11,7 @@ apt-get upgrade -y
 ./fldigi-install
 ./wsjtx-install
 ./js8call-install
+./pat-install
+./piardopc-install
 
 reboot
