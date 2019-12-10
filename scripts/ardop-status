@@ -1,0 +1,87 @@
+
+#!/bin/bash
+
+
+
+#create a finish trap
+function finish {
+  if [[ -f /tmp/process-status ]]; then
+rm /tmp/process-status
+fi
+
+}
+trap finish EXIT
+
+
+while true
+do
+
+
+
+if pidof piardopc 2>/dev/null; then
+ardopstat="TRUE"
+ardoppid=$(pidof piardopc)
+else
+ardopstat="FALSE"
+ardoppid="None"
+fi
+
+if pidof piARDOP_GUI 2>/dev/null; then
+guistat="TRUE"
+guipid=$(pidof piARDOP_GUI)
+else
+guistat="FALSE"
+guipid="None"
+fi
+
+if pidof pat 2>/dev/null; then
+patstat="TRUE"
+patpid=$(pidof pat)
+else
+patstat="FALSE"
+patpid="None"
+fi
+
+if ! hash pat 2>/dev/null; then
+patstat="NOT_INSTALLED"
+patpid="NOT_INSTALLED"
+fi
+
+yad --center --checklist --list --print-all --title=Status --button=Close:1 --button=Toggle:0 --column=Active --column=Name --column=PID  $ardopstat ARDOPC $ardoppid $patstat PAT $patpid $guistat ARDOP_GUI $guipid --width=250 --height=200 >> /tmp/process-status || exit 0
+
+
+
+ARDOPRESULTS=$(cat /tmp/process-status | head -n 1 | awk -F "|" '{print $1}')
+PATRESULTS=$(cat /tmp/process-status | sed -n '2p' | awk -F "|" '{print $1}')
+GUIRESULTS=$(cat /tmp/process-status | sed -n '3p' | awk -F "|" '{print $1}')
+
+if ( [[ $ardopstat == TRUE ]] && [[ ${ARDOPRESULTS} == FALSE ]] ); then
+kill $ardoppid
+fi
+
+if ( [[ $ardopstat == FALSE ]] && [[ ${ARDOPRESULTS} == TRUE ]] ); then
+/home/pi/Radio/ARDOP/piardopc &
+fi
+
+if ( [[ $patstat == TRUE ]] && [[ ${PATRESULTS} == FALSE ]] ); then
+kill $patpid
+fi
+
+if ( [[ $patstat == FALSE ]] && [[ ${PATRESULTS} == TRUE ]] ); then
+pat http &
+fi
+
+if ( [[ $guistat == TRUE ]] && [[ ${GUIRESULTS} == FALSE ]] ); then
+kill $guipid
+fi
+
+if ( [[ $guistat == FALSE ]] && [[ ${GUIRESULTS} == TRUE ]] ); then
+/home/pi/Radio/ARDOP/piARDOP_GUI &
+fi
+
+
+finish
+sleep 2
+
+done
+
