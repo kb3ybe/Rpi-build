@@ -7,8 +7,7 @@ apt-get upgrade -y
 ./gpsclock-install
 ./autohotspot-install
 ./hamlib-install
-./flrig-install
-./fldigi-install
+./flapps-install
 ./wsjtx-install
 ./js8call-install
 ./pat-install
