@@ -1,0 +1,695 @@
+Serial port: /dev/tty
+Serial port: /dev/tty0
+Serial port: /dev/tty1
+Serial port: /dev/tty10
+Serial port: /dev/tty11
+Serial port: /dev/tty12
+Serial port: /dev/tty13
+Serial port: /dev/tty14
+Serial port: /dev/tty15
+Serial port: /dev/tty16
+Serial port: /dev/tty17
+Serial port: /dev/tty18
+Serial port: /dev/tty19
+Serial port: /dev/tty2
+Serial port: /dev/tty20
+Serial port: /dev/tty21
+Serial port: /dev/tty22
+Serial port: /dev/tty23
+Serial port: /dev/tty24
+Serial port: /dev/tty25
+Serial port: /dev/tty26
+Serial port: /dev/tty27
+Serial port: /dev/tty28
+Serial port: /dev/tty29
+Serial port: /dev/tty3
+Serial port: /dev/tty30
+Serial port: /dev/tty31
+Serial port: /dev/tty32
+Serial port: /dev/tty33
+Serial port: /dev/tty34
+Serial port: /dev/tty35
+Serial port: /dev/tty36
+Serial port: /dev/tty37
+Serial port: /dev/tty38
+Serial port: /dev/tty39
+Serial port: /dev/tty4
+Serial port: /dev/tty40
+Serial port: /dev/tty41
+Serial port: /dev/tty42
+Serial port: /dev/tty43
+Serial port: /dev/tty44
+Serial port: /dev/tty45
+Serial port: /dev/tty46
+Serial port: /dev/tty47
+Serial port: /dev/tty48
+Serial port: /dev/tty49
+Serial port: /dev/tty5
+Serial port: /dev/tty50
+Serial port: /dev/tty51
+Serial port: /dev/tty52
+Serial port: /dev/tty53
+Serial port: /dev/tty54
+Serial port: /dev/tty55
+Serial port: /dev/tty56
+Serial port: /dev/tty57
+Serial port: /dev/tty58
+Serial port: /dev/tty59
+Serial port: /dev/tty6
+Serial port: /dev/tty60
+Serial port: /dev/tty61
+Serial port: /dev/tty62
+Serial port: /dev/tty63
+Serial port: /dev/tty7
+Serial port: /dev/tty8
+Serial port: /dev/tty9
+Serial port: /dev/ttyACM0
+Serial port: /dev/ttyAMA0
+Serial port: /dev/ttyUSB0
+Serial port: /dev/ttyUSB1
+Serial port: /dev/ttyprintk
+2019/12/10 16:22:21 Unable to get frequency from rig 891: dial tcp [::1]:4532: connect: connection refused.
+2019/12/10 16:22:21 Starting HTTP service (0.0.0.0:8080)...
+2019/12/10 16:23:53 891 ready. Dial frequency is 14.078.00 MHz.
+2019/12/10 16:23:53 Starting HTTP service (0.0.0.0:8080)...
+ARDOPC Version 1.0.4.1j-BPQ
+ARDOPC listening on port 8515
+Capture Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1 channel,  sampling rate 8000..48000 Hz
+
+Playback Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+  Device hw:0,0 ID `bcm2835 ALSA', name `bcm2835 ALSA', 7 subdevices (7 available)
+    1..2 channels, sampling rate 8000..192000 Hz
+  Device hw:0,1 ID `bcm2835 IEC958/HDMI', name `bcm2835 IEC958/HDMI', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+  Device hw:0,2 ID `bcm2835 IEC958/HDMI1', name `bcm2835 IEC958/HDMI1', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1..2 channels, sampling rate 8000..48000 Hz
+
+Opening Playback Device plughw:1,0 Rate 12000
+Opening Capture Device plughw:1,0 Rate 12000
+ARDOPC listening on port 8515
+Input peaks = -111, 114
+Input peaks = -117, 101
+Input peaks = -127, 119
+Input peaks = -141, 114
+Input peaks = -203, 156
+Input peaks = -119, 128
+Input peaks = -142, 190
+Input peaks = -147, 172
+Input peaks = -169, 162
+Input peaks = -117, 149
+terminating on SIGTERM
+Serial port: /dev/tty
+Serial port: /dev/tty0
+Serial port: /dev/tty1
+Serial port: /dev/tty10
+Serial port: /dev/tty11
+Serial port: /dev/tty12
+Serial port: /dev/tty13
+Serial port: /dev/tty14
+Serial port: /dev/tty15
+Serial port: /dev/tty16
+Serial port: /dev/tty17
+Serial port: /dev/tty18
+Serial port: /dev/tty19
+Serial port: /dev/tty2
+Serial port: /dev/tty20
+Serial port: /dev/tty21
+Serial port: /dev/tty22
+Serial port: /dev/tty23
+Serial port: /dev/tty24
+Serial port: /dev/tty25
+Serial port: /dev/tty26
+Serial port: /dev/tty27
+Serial port: /dev/tty28
+Serial port: /dev/tty29
+Serial port: /dev/tty3
+Serial port: /dev/tty30
+Serial port: /dev/tty31
+Serial port: /dev/tty32
+Serial port: /dev/tty33
+Serial port: /dev/tty34
+Serial port: /dev/tty35
+Serial port: /dev/tty36
+Serial port: /dev/tty37
+Serial port: /dev/tty38
+Serial port: /dev/tty39
+Serial port: /dev/tty4
+Serial port: /dev/tty40
+Serial port: /dev/tty41
+Serial port: /dev/tty42
+Serial port: /dev/tty43
+Serial port: /dev/tty44
+Serial port: /dev/tty45
+Serial port: /dev/tty46
+Serial port: /dev/tty47
+Serial port: /dev/tty48
+Serial port: /dev/tty49
+Serial port: /dev/tty5
+Serial port: /dev/tty50
+Serial port: /dev/tty51
+Serial port: /dev/tty52
+Serial port: /dev/tty53
+Serial port: /dev/tty54
+Serial port: /dev/tty55
+Serial port: /dev/tty56
+Serial port: /dev/tty57
+Serial port: /dev/tty58
+Serial port: /dev/tty59
+Serial port: /dev/tty6
+Serial port: /dev/tty60
+Serial port: /dev/tty61
+Serial port: /dev/tty62
+Serial port: /dev/tty63
+Serial port: /dev/tty7
+Serial port: /dev/tty8
+Serial port: /dev/tty9
+Serial port: /dev/ttyACM0
+Serial port: /dev/ttyAMA0
+Serial port: /dev/ttyUSB0
+Serial port: /dev/ttyUSB1
+Serial port: /dev/ttyprintk
+2019/12/10 16:24:34 891 ready. Dial frequency is 14.078.00 MHz.
+2019/12/10 16:24:34 Starting HTTP service (0.0.0.0:8080)...
+2019/12/10 16:25:29 ARDOP TNC (ARDOP TNC_1.0.4.1j-BPQ) initialized
+2019/12/10 16:25:29 QSY ardop: 3586.5
+2019/12/10 16:25:32 Connecting to K0SI (ardop)...
+2019/12/10 16:26:01 Unable to establish connection to remote: Connect timeout
+2019/12/10 16:26:02 QSX ardop: 14078.000
+2019/12/10 16:26:12 QSY ardop: 3586.5
+2019/12/10 16:26:15 Connecting to K0SI (ardop)...
+ARDOPC Version 1.0.4.1j-BPQ
+ARDOPC listening on port 8515
+Capture Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1 channel,  sampling rate 8000..48000 Hz
+
+Playback Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+  Device hw:0,0 ID `bcm2835 ALSA', name `bcm2835 ALSA', 7 subdevices (7 available)
+    1..2 channels, sampling rate 8000..192000 Hz
+  Device hw:0,1 ID `bcm2835 IEC958/HDMI', name `bcm2835 IEC958/HDMI', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+  Device hw:0,2 ID `bcm2835 IEC958/HDMI1', name `bcm2835 IEC958/HDMI1', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1..2 channels, sampling rate 8000..48000 Hz
+
+Opening Playback Device plughw:1,0 Rate 12000
+Opening Capture Device plughw:1,0 Rate 12000
+ARDOPC listening on port 8515
+Input peaks = -143, 160
+Input peaks = -147, 142
+Input peaks = -139, 176
+Input peaks = -121, 162
+Input peaks = -146, 170
+Host Control Session Connected
+Host Data Session Connected
+[Command Trace FROM host: INITIALIZE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host INITIALIZE
+[Command Trace FROM host: STATE
+ Command Trace TO Host STATE DISC
+[Command Trace FROM host: PROTOCOLMODE ARQ
+ Command Trace TO Host PROTOCOLMODE now ARQ
+[Command Trace FROM host: ARQTIMEOUT 90
+ Command Trace TO Host ARQTIMEOUT now 90
+[Command Trace FROM host: LISTEN FALSE
+ Command Trace TO Host LISTEN now FALSE
+[Command Trace FROM host: MYCALL KB3YBE
+ Command Trace TO Host MYCALL now KB3YBE
+[Command Trace FROM host: GRIDSQUARE FN20IR
+ Command Trace TO Host GRIDSQUARE now FN20IR
+[Command Trace FROM host: ARQBW 500MAX
+ Command Trace TO Host ARQBW now 500MAX
+[Command Trace FROM host: CWID TRUE
+ Command Trace TO Host CWID now TRUE
+[Command Trace FROM host: VERSION
+ Command Trace TO Host VERSION ARDOP TNC_1.0.4.1j-BPQ
+[Command Trace FROM host: ARQCALL K0SI 10
+ Command Trace TO Host ARQCALL K0SI 10
+ Command Trace TO Host NEWSTATE ISS 
+[SendARQConnectRequest] strMycall=KB3YBE  strTargetCall=K0SI bytPendingSessionID=73
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -157, 167
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -173, 111
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -133, 134
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host NEWSTATE DISC 
+ Command Trace TO Host STATUS CONNECT TO K0SI FAILED!
+Input peaks = -127, 124
+[Command Trace FROM host: VERSION
+ Command Trace TO Host VERSION ARDOP TNC_1.0.4.1j-BPQ
+[Command Trace FROM host: ARQCALL K0SI 10
+ Command Trace TO Host ARQCALL K0SI 10
+ Command Trace TO Host NEWSTATE ISS 
+[SendARQCon2019/12/10 16:26:35 Unable to establish connection to remote: Connect timeout
+2019/12/10 16:26:36 QSX ardop: 14078.000
+nectRequest] strMycall=KB3YBE  strTargetCall=K0SI bytPendingSessionID=73
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -126, 153
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -144, 138
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host NEWSTATE DISC 
+ Command Trace TO Host STATUS CONNECT TO K0SI FAILED!
+Input peaks = -178, 132
+terminating on SIGTERM
+2019/12/10 16:26:53 ARDOP TNC (ARDOP TNC_1.0.4.1j-BPQ) initialized
+2019/12/10 16:26:53 QSY ardop: 3586.5
+2019/12/10 16:26:56 Connecting to K0SI (ardop)...
+2019/12/10 16:27:26 Unable to establish connection to remote: Connect timeout
+2019/12/10 16:27:27 QSX ardop: 14078.000
+ARDOPC Version 1.0.4.1j-BPQ
+ARDOPC listening on port 8515
+Capture Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1 channel,  sampling rate 8000..48000 Hz
+
+Playback Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+  Device hw:0,0 ID `bcm2835 ALSA', name `bcm2835 ALSA', 7 subdevices (7 available)
+    1..2 channels, sampling rate 8000..192000 Hz
+  Device hw:0,1 ID `bcm2835 IEC958/HDMI', name `bcm2835 IEC958/HDMI', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+  Device hw:0,2 ID `bcm2835 IEC958/HDMI1', name `bcm2835 IEC958/HDMI1', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1..2 channels, sampling rate 8000..48000 Hz
+
+Opening Playback Device plughw:1,0 Rate 12000
+Opening Capture Device plughw:1,0 Rate 12000
+ARDOPC listening on port 8515
+Host Control Session Connected
+Host Data Session Connected
+[Command Trace FROM host: INITIALIZE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host INITIALIZE
+[Command Trace FROM host: STATE
+ Command Trace TO Host STATE DISC
+[Command Trace FROM host: PROTOCOLMODE ARQ
+ Command Trace TO Host PROTOCOLMODE now ARQ
+[Command Trace FROM host: ARQTIMEOUT 90
+ Command Trace TO Host ARQTIMEOUT now 90
+[Command Trace FROM host: LISTEN FALSE
+ Command Trace TO Host LISTEN now FALSE
+[Command Trace FROM host: MYCALL KB3YBE
+ Command Trace TO Host MYCALL now KB3YBE
+[Command Trace FROM host: GRIDSQUARE FN20IR
+ Command Trace TO Host GRIDSQUARE now FN20IR
+[Command Trace FROM host: ARQBW 500MAX
+ Command Trace TO Host ARQBW now 500MAX
+[Command Trace FROM host: CWID TRUE
+ Command Trace TO Host CWID now TRUE
+[Command Trace FROM host: VERSION
+ Command Trace TO Host VERSION ARDOP TNC_1.0.4.1j-BPQ
+[Command Trace FROM host: ARQCALL K0SI 10
+ Command Trace TO Host ARQCALL K0SI 10
+ Command Trace TO Host NEWSTATE ISS 
+[SendARQConnectRequest] strMycall=KB3YBE  strTargetCall=K0SI bytPendingSessionID=73
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -105, 127
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -125, 124
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -108, 114
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host NEWSTATE DISC 
+ Command Trace TO Host STATUS CONNECT TO K0SI FAILED!
+Input peaks = -165, 130
+terminating on SIGTERM
+2019/12/10 16:27:54 ARDOP TNC (ARDOP TNC_1.0.4.1j-BPQ) initialized
+2019/12/10 16:27:54 QSY ardop: 3586.5
+2019/12/10 16:27:57 Connecting to K0SI (ardop)...
+2019/12/10 16:28:32 Unable to establish connection to remote: Connect timeout
+2019/12/10 16:28:33 QSX ardop: 14078.000
+ARDOPC Version 1.0.4.1j-BPQ
+ARDOPC listening on port 8515
+Capture Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1 channel,  sampling rate 8000..48000 Hz
+
+Playback Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+  Device hw:0,0 ID `bcm2835 ALSA', name `bcm2835 ALSA', 7 subdevices (7 available)
+    1..2 channels, sampling rate 8000..192000 Hz
+  Device hw:0,1 ID `bcm2835 IEC958/HDMI', name `bcm2835 IEC958/HDMI', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+  Device hw:0,2 ID `bcm2835 IEC958/HDMI1', name `bcm2835 IEC958/HDMI1', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1..2 channels, sampling rate 8000..48000 Hz
+
+Opening Playback Device plughw:1,0 Rate 12000
+Opening Capture Device plughw:1,0 Rate 12000
+ARDOPC listening on port 8515
+Input peaks = -118, 123
+Host Control Session Connected
+Host Data Session Connected
+[Command Trace FROM host: INITIALIZE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host INITIALIZE
+[Command Trace FROM host: STATE
+ Command Trace TO Host STATE DISC
+[Command Trace FROM host: PROTOCOLMODE ARQ
+ Command Trace TO Host PROTOCOLMODE now ARQ
+[Command Trace FROM host: ARQTIMEOUT 90
+ Command Trace TO Host ARQTIMEOUT now 90
+[Command Trace FROM host: LISTEN FALSE
+ Command Trace TO Host LISTEN now FALSE
+[Command Trace FROM host: MYCALL KB3YBE
+ Command Trace TO Host MYCALL now KB3YBE
+[Command Trace FROM host: GRIDSQUARE FN20IR
+ Command Trace TO Host GRIDSQUARE now FN20IR
+[Command Trace FROM host: ARQBW 500MAX
+ Command Trace TO Host ARQBW now 500MAX
+[Command Trace FROM host: CWID TRUE
+ Command Trace TO Host CWID now TRUE
+[Command Trace FROM host: VERSION
+ Command Trace TO Host VERSION ARDOP TNC_1.0.4.1j-BPQ
+[Command Trace FROM host: ARQCALL K0SI 10
+ Command Trace TO Host ARQCALL K0SI 10
+ Command Trace TO Host NEWSTATE ISS 
+[SendARQConnectRequest] strMycall=KB3YBE  strTargetCall=K0SI bytPendingSessionID=73
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -147, 135
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -146, 197
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+cannot open playback audio device plughw:1,0 (Device or resource busy)
+[Main.KeyPTT]  PTT-FALSE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host NEWSTATE DISC 
+ Command Trace TO Host STATUS CONNECT TO K0SI FAILED!
+terminating on SIGTERM
+2019/12/10 16:29:03 ARDOP TNC (ARDOP TNC_1.0.4.1j-BPQ) initialized
+2019/12/10 16:29:03 QSY ardop: 3586.5
+2019/12/10 16:29:06 Connecting to K0SI (ardop)...
+2019/12/10 16:29:45 Unable to establish connection to remote: Connect timeout
+2019/12/10 16:29:46 QSX ardop: 14078.000
+ARDOPC Version 1.0.4.1j-BPQ
+ARDOPC listening on port 8515
+Capture Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1 channel,  sampling rate 8000..48000 Hz
+
+Playback Devices
+
+Card 0, ID `ALSA', name `bcm2835 ALSA'
+  Device hw:0,0 ID `bcm2835 ALSA', name `bcm2835 ALSA', 7 subdevices (7 available)
+    1..2 channels, sampling rate 8000..192000 Hz
+  Device hw:0,1 ID `bcm2835 IEC958/HDMI', name `bcm2835 IEC958/HDMI', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+  Device hw:0,2 ID `bcm2835 IEC958/HDMI1', name `bcm2835 IEC958/HDMI1', 1 subdevices (1 available)
+    2..8 channels, sampling rate 44100..192000 Hz
+
+Card 1, ID `CODEC', name `USB audio CODEC'
+  Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+    1..2 channels, sampling rate 8000..48000 Hz
+
+Opening Playback Device plughw:1,0 Rate 12000
+Opening Capture Device plughw:1,0 Rate 12000
+ARDOPC listening on port 8515
+Input peaks = -134, 135
+Host Control Session Connected
+Host Data Session Connected
+[Command Trace FROM host: INITIALIZE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host INITIALIZE
+[Command Trace FROM host: STATE
+ Command Trace TO Host STATE DISC
+[Command Trace FROM host: PROTOCOLMODE ARQ
+ Command Trace TO Host PROTOCOLMODE now ARQ
+[Command Trace FROM host: ARQTIMEOUT 90
+ Command Trace TO Host ARQTIMEOUT now 90
+[Command Trace FROM host: LISTEN FALSE
+ Command Trace TO Host LISTEN now FALSE
+[Command Trace FROM host: MYCALL KB3YBE
+ Command Trace TO Host MYCALL now KB3YBE
+[Command Trace FROM host: GRIDSQUARE FN20IR
+ Command Trace TO Host GRIDSQUARE now FN20IR
+[Command Trace FROM host: ARQBW 500MAX
+ Command Trace TO Host ARQBW now 500MAX
+[Command Trace FROM host: CWID TRUE
+ Command Trace TO Host CWID now TRUE
+[Command Trace FROM host: VERSION
+ Command Trace TO Host VERSION ARDOP TNC_1.0.4.1j-BPQ
+[Command Trace FROM host: ARQCALL K0SI 10
+ Command Trace TO Host ARQCALL K0SI 10
+ Command Trace TO Host NEWSTATE ISS 
+[SendARQConnectRequest] strMycall=KB3YBE  strTargetCall=K0SI bytPendingSessionID=73
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -101, 119
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -122, 113
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+Input peaks = -131, 112
+Repeating Last Frame
+Sending Frame Type ConReq500M
+[Main.KeyPTT]  PTT-TRUE
+[Main.KeyPTT]  PTT-FALSE
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host BUFFER 0
+ Command Trace TO Host NEWSTATE DISC 
+ Command Trace TO Host STATUS CONNECT TO K0SI FAILED!
+Input peaks = -110, 115
+terminating on SIGTERM

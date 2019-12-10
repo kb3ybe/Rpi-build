@@ -1,0 +1,102 @@
+
+#!/bin/bash
+
+
+
+#create a finish trap
+function finish {
+  if [[ -f /tmp/process-status ]]; then
+rm /tmp/process-status
+fi
+
+}
+trap finish EXIT
+
+
+while true
+do
+
+if pidof flrig 2>/dev/null; then
+flrigstat="TRUE"
+flrigpid=$(pidof flrig)
+else
+flrigstat="FALSE"
+flrigpid="None"
+fi
+
+if pidof rigctld 2>/dev/null; then
+rigctlstat="TRUE"
+rigctlpid=$(pidof rigctld)
+else
+rigctlstat="FALSE"
+rigctlpid="None"
+fi
+
+if pidof piardopc 2>/dev/null; then
+ardopstat="TRUE"
+ardoppid=$(pidof piardopc)
+else
+ardopstat="FALSE"
+ardoppid="None"
+fi
+
+if pidof pat 2>/dev/null; then
+patstat="TRUE"
+patpid=$(pidof pat)
+else
+patstat="FALSE"
+patpid="None"
+fi
+
+if ! hash pat 2>/dev/null; then
+patstat="NOT_INSTALLED"
+patpid="NOT_INSTALLED"
+fi
+
+yad --center --checklist --list --print-all --title=Status --button=Close:1 --button=Toggle:0 --column=Active --column=Name --column=PID  $flrigstat FLRIG $flrigpid $rigctlstat RIGCTL $rigctlpid $ardopstat ARDOPC $ardoppid $patstat PAT $patpid --width=250 --height=200 >> /tmp/process-status || exit 0
+
+
+FLRIGRESULTS=$(cat /tmp/process-status | head -n 1 | awk -F "|" '{print $1}')
+RIGCTLRESULTS=$(cat /tmp/process-status | sed -n '2p' | awk -F "|" '{print $1}')
+ARDOPRESULTS=$(cat /tmp/process-status | sed -n '3p' | awk -F "|" '{print $1}')
+PATRESULTS=$(cat /tmp/process-status | sed -n '4p' | awk -F "|" '{print $1}')
+
+if ( [[ $flrigstat == TRUE ]] && [[ ${FLRIGRESULTS} == FALSE ]] ); then
+kill $flrigpid
+fi
+
+if ( [[ $flrigstat == FALSE ]] && [[ ${FLRIGRESULTS} == TRUE ]] ); then
+nohup flrig &
+fi
+
+
+if ( [[ $ardopstat == TRUE ]] && [[ ${ARDOPRESULTS} == FALSE ]] ); then
+kill $ardoppid
+fi
+
+if ( [[ $ardopstat == FALSE ]] && [[ ${ARDOPRESULTS} == TRUE ]] ); then
+nohup piardopc 8515 plughw:1,0 plughw:1,0 &
+fi
+
+if ( [[ $patstat == TRUE ]] && [[ ${PATRESULTS} == FALSE ]] ); then
+kill $patpid
+fi
+
+if ( [[ $patstat == FALSE ]] && [[ ${PATRESULTS} == TRUE ]] ); then
+nohup pat http &
+fi
+
+if ( [[ $rigctlstat == TRUE ]] && [[ ${RIGCTLRESULTS} == FALSE ]] ); then
+kill $rigctlpid
+fi
+
+if ( [[ $rigctlstat == FALSE ]] && [[ ${RIGCTLRESULTS} == TRUE ]] ); then
+rigctld -m 4 &
+fi
+
+
+finish
+sleep 2
+
+done
+
