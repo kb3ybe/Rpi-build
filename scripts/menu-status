@@ -66,7 +66,7 @@ kill $flrigpid
 fi
 
 if ( [[ $flrigstat == FALSE ]] && [[ ${FLRIGRESULTS} == TRUE ]] ); then
-nohup flrig &
+nohup flrig >/dev/null &
 fi
 
 
@@ -75,7 +75,7 @@ kill $ardoppid
 fi
 
 if ( [[ $ardopstat == FALSE ]] && [[ ${ARDOPRESULTS} == TRUE ]] ); then
-nohup piardopc 8515 plughw:1,0 plughw:1,0 &
+piardopc 8515 plughw:1,0 plughw:1,0 >/dev/null &
 fi
 
 if ( [[ $patstat == TRUE ]] && [[ ${PATRESULTS} == FALSE ]] ); then
@@ -83,15 +83,15 @@ kill $patpid
 fi
 
 if ( [[ $patstat == FALSE ]] && [[ ${PATRESULTS} == TRUE ]] ); then
-nohup pat http &
+nohup pat http >/dev/null &
 fi
 
 if ( [[ $rigctlstat == TRUE ]] && [[ ${RIGCTLRESULTS} == FALSE ]] ); then
-kill $rigctlpid
+kill $rigctlpid 
 fi
 
 if ( [[ $rigctlstat == FALSE ]] && [[ ${RIGCTLRESULTS} == TRUE ]] ); then
-rigctld -m 4 &
+nohup rigctld -m 4 >/dev/null &
 fi
 
 
