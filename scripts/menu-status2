@@ -1,0 +1,136 @@
+
+#!/bin/bash
+
+
+
+#create a finish trap
+function finish {
+  if [[ -f /tmp/process-status ]]; then
+rm /tmp/process-status
+fi
+
+}
+trap finish EXIT
+
+
+while true
+do
+
+if pidof flrig 2>/dev/null; then
+flrigstat="TRUE"
+flrigpid=$(pidof flrig)
+else
+flrigstat="FALSE"
+flrigpid="None"
+fi
+
+if pidof rigctld 2>/dev/null; then
+rigctlstat="TRUE"
+rigctlpid=$(pidof rigctld)
+else
+rigctlstat="FALSE"
+rigctlpid="None"
+fi
+
+if pidof piardopc 2>/dev/null; then
+ardopstat="TRUE"
+ardoppid=$(pidof piardopc)
+else
+ardopstat="FALSE"
+ardoppid="None"
+fi
+
+if pidof rfcomm 2>/dev/null; then
+rfcommstat="TRUE"
+rfcommpid=$(pidof rfcomm)
+else
+rfcommstat="FALSE"
+rfcommpid="None"
+fi
+
+if pidof kissattach 2>/dev/null; then
+kissstat="TRUE"
+kisspid=$(pidof kissattach)
+else
+kissstat="FALSE"
+kisspid="None"
+fi
+
+if pidof pat 2>/dev/null; then
+patstat="TRUE"
+patpid=$(pidof pat)
+else
+patstat="FALSE"
+patpid="None"
+fi
+
+if ! hash pat 2>/dev/null; then
+patstat="NOT_INSTALLED"
+patpid="NOT_INSTALLED"
+fi
+
+yad --center --checklist --list --print-all --title=Status --button=Close:1 --button=Toggle:0 --column=Active --column=Name --column=PID  $flrigstat flrig $flrigpid $rigctlstat rigctld $rigctlpid $ardopstat piardopc $ardoppid $rfcommstat Mobilinkd $rfcommpid $kissstat AX25 $kisspid $patstat PAT $patpid --width=250 --height=250 >> /tmp/process-status || exit 0
+
+
+FLRIGRESULTS=$(cat /tmp/process-status | head -n 1 | awk -F "|" '{print $1}')
+RIGCTLRESULTS=$(cat /tmp/process-status | sed -n '2p' | awk -F "|" '{print $1}')
+ARDOPRESULTS=$(cat /tmp/process-status | sed -n '3p' | awk -F "|" '{print $1}')
+RFCOMMRESULTS=$(cat /tmp/process-status | sed -n '4p' | awk -F "|" '{print $1}')
+KISSRESULTS=$(cat /tmp/process-status | sed -n '5p' | awk -F "|" '{print $1}')
+PATRESULTS=$(cat /tmp/process-status | sed -n '6p' | awk -F "|" '{print $1}')
+
+if ( [[ $flrigstat == TRUE ]] && [[ ${FLRIGRESULTS} == FALSE ]] ); then
+kill $flrigpid
+fi
+
+if ( [[ $flrigstat == FALSE ]] && [[ ${FLRIGRESULTS} == TRUE ]] ); then
+nohup flrig >/dev/null &
+fi
+
+
+if ( [[ $ardopstat == TRUE ]] && [[ ${ARDOPRESULTS} == FALSE ]] ); then
+kill $ardoppid
+fi
+
+if ( [[ $ardopstat == FALSE ]] && [[ ${ARDOPRESULTS} == TRUE ]] ); then
+piardopc 8515 plughw:1,0 plughw:1,0 >/dev/null &
+fi
+
+if ( [[ $patstat == TRUE ]] && [[ ${PATRESULTS} == FALSE ]] ); then
+kill $patpid
+fi
+
+if ( [[ $patstat == FALSE ]] && [[ ${PATRESULTS} == TRUE ]] ); then
+nohup pat http >/dev/null &
+fi
+
+if ( [[ $rigctlstat == TRUE ]] && [[ ${RIGCTLRESULTS} == FALSE ]] ); then
+kill $rigctlpid 
+fi
+
+if ( [[ $rigctlstat == FALSE ]] && [[ ${RIGCTLRESULTS} == TRUE ]] ); then
+nohup rigctld -m 4 >/dev/null &
+fi
+
+if ( [[ $rfcommstat == TRUE ]] && [[ ${RFCOMMRESULTS} == FALSE ]] ); then
+sudo kill $rfcommpid
+fi
+
+if ( [[ $rfcommstat == FALSE ]] && [[ ${RFCOMMRESULTS} == TRUE ]] ); then
+nohup sudo rfcomm connect /dev/rfcomm0 34:81:F4:33:AB:B3 6 >/dev/null &
+fi
+
+if ( [[ $kissstat == TRUE ]] && [[ ${KISSRESULTS} == FALSE ]] ); then
+sudo kill $kisspid
+fi
+
+if ( [[ $kissstat == FALSE ]] && [[ ${KISSRESULTS} == TRUE ]] ); then
+nohup sudo kissattach /dev/rfcomm0 wl2k >/dev/null &
+fi
+
+
+finish
+sleep 2
+
+done
+

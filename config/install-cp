@@ -1,0 +1,2 @@
+ln -f -s /home/pi/rpi-build/config/radiocp.desktop ~/Desktop/radiocp.desktop
+

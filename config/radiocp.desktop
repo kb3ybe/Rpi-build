@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=HAM Radio Control Panel
+Terminal=true
+Name=Radio Control Panel
+Exec=bash -c /home/pi/rpi-build/scripts/menu-status2
+Type=Application
+Icon=/home/pi/rpi-build/icons/radio.png

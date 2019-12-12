@@ -1,0 +1,27 @@
+16:19:37.385 ARDOPC Version 1.0.4.1j-BPQ
+16:19:37.385 ARDOPC listening on port 8515
+16:19:37.385 Capture Devices
+
+16:19:37.402 Card 0, ID `ALSA', name `bcm2835 ALSA'
+16:19:37.402 
+16:19:37.402 Card 1, ID `CODEC', name `USB audio CODEC'
+16:19:37.402   Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+16:19:37.403     1 channel,  sampling rate 8000..48000 Hz
+16:19:37.403 
+16:19:37.403 Playback Devices
+
+16:19:37.403 Card 0, ID `ALSA', name `bcm2835 ALSA'
+16:19:37.403   Device hw:0,0 ID `bcm2835 ALSA', name `bcm2835 ALSA', 7 subdevices (7 available)
+16:19:37.404     1..2 channels, sampling rate 8000..192000 Hz
+16:19:37.404   Device hw:0,1 ID `bcm2835 IEC958/HDMI', name `bcm2835 IEC958/HDMI', 1 subdevices (1 available)
+16:19:37.405     2..8 channels, sampling rate 44100..192000 Hz
+16:19:37.405   Device hw:0,2 ID `bcm2835 IEC958/HDMI1', name `bcm2835 IEC958/HDMI1', 1 subdevices (1 available)
+16:19:37.405     2..8 channels, sampling rate 44100..192000 Hz
+16:19:37.405 
+16:19:37.405 Card 1, ID `CODEC', name `USB audio CODEC'
+16:19:37.405   Device hw:1,0 ID `USB Audio', name `USB Audio', 1 subdevices (1 available)
+16:19:37.406     1..2 channels, sampling rate 8000..48000 Hz
+16:19:37.406 
+16:19:37.406 Opening Playback Device plughw:1,0 Rate 12000
+16:19:37.411 cannot set parameters (Input/output error)
+16:19:37.411 ARDOPC listening on port 8515
