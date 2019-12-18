@@ -12,5 +12,7 @@ apt-get upgrade -y
 ./js8call-install
 ./pat-install
 ./piardopc-install
+./ad2-waveforms-install
+./sdr-install
 
 reboot

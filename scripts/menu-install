@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Install radio menu on user's desktop
+
+cp ../config/radiocp.desktop ~/Desktop
