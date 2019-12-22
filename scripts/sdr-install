@@ -6,5 +6,3 @@ cp ../config/blacklist-dvb.conf /etc/modprobe.d
 cp ../config/20.rtlsdr.rules /etc/udev/rules.d
 
 apt-get install rtl-sdr gqrx-sdr -y
-
-reboot
