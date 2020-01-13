@@ -26,18 +26,18 @@ sed -i -e 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
 
 #Install flrig
 cd ../build
-wget http://www.w1hkj.com/files/flrig/flrig-1.3.48.tar.gz
-tar -zxvf ./flrig-1.3.48.tar.gz
-cd flrig-1.3.48
+wget http://www.w1hkj.com/files/flrig/flrig-1.3.49.tar.gz
+tar -zxvf ./flrig-1.3.49.tar.gz
+cd flrig-1.3.49
 ./configure
 make
 make install
 
 #Install fldigi
 cd ..
-wget http://www.w1hkj.com/files/fldigi/fldigi-4.1.08.tar.gz
-tar -zxvf ./fldigi-4.1.08.tar.gz
-cd fldigi-4.1.08
+wget http://www.w1hkj.com/files/fldigi/fldigi-4.1.09.tar.gz
+tar -zxvf ./fldigi-4.1.09.tar.gz
+cd fldigi-4.1.09
 ./configure
 make
 make install
