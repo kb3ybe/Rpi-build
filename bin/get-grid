@@ -20,4 +20,3 @@ if gpsd.started?
 end
 
 puts "#{maid}"
-

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GRID=$($HOME/rpi-build/bin/get-grid)
+GRID=$($HOME/bin/conky/get-grid)
 GRIDCH=$(echo $GRID | grep -i JJ00)
 
 if [ -z "$GRIDCH" ]
