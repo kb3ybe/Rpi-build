@@ -1,0 +1,5 @@
+
+
+sudo apt-get install conky ruby2.3 -y
+sudo gem install gpsd_client
+sudo gem install maidenhead
