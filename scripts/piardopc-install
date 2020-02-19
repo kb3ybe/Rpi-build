@@ -1,3 +1,4 @@
 #!/bin/bash
 
 cp ../bin/piardopc /usr/local/bin
+cp ../bin/piARDOP_GUI /usr/local/bin
