@@ -3,3 +3,4 @@
 #Install radio menu on user's desktop
 
 cp ../config/radiocp.desktop ~/Desktop
+cp ../config/worldgridmap.pdf ~/Desktop
