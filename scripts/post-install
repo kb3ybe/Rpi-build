@@ -1,0 +1,5 @@
+#!/bin/bash
+
+~/rpi-build/scripts/menu-install
+cp ~/rpi-build/config/config.json ~/.wl2k/.
+pat rmslist --force-download
