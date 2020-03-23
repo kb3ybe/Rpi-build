@@ -1,0 +1,3 @@
+#!/bin/bash
+
+apt install cqrlog libmariadb3 libmariadb-dev mariadb-common mariadb-server
