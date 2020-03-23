@@ -15,5 +15,6 @@ apt-get install gpredict qsstv -y
 ./piardopc-install
 ./ad2-waveforms-install
 ./sdr-install
+./cqrlog-install
 
 reboot
