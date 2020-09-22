@@ -5,8 +5,8 @@ if pidof rfcomm > /dev/null; then
   exit 1
 else
   if pidof kissattach > /dev/null; then
-    #echo "rfcomm stopped but kissattach and pat still running - killing"
-    sudo kill `pidof kissattach` `pidof pat`
+    #echo "rfcomm stopped but kissattach still running - killing"
+    sudo kill `pidof kissattach`
     #echo "killed"
   fi
   #echo "rfcomm not running, attempting to start"
@@ -17,7 +17,7 @@ sleep 10
 if pidof rfcomm > /dev/null; then
   #echo "successful BT connection, bringing up AX.25 interface"
   sudo kissattach /dev/rfcomm0 wl2k > /dev/null
-  pat http > /dev/null &
+#  pat http > /dev/null &
 #else
   #echo "unsuccessful BT connection - aborting"
 fi
